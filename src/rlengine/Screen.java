@@ -19,9 +19,12 @@ public class Screen extends JPanel {
         this.setBounds(0, 0, WIDTH * SCALE, HEIGHT * SCALE);
         this.add(asciiPanel = new AsciiPanel(WIDTH, HEIGHT));
         this.setBackground(Color.BLACK);
+    	
     }
 
     public void render() {
+    	this.repaint();
+	//render here
     }
 
     public static Screen getInstance() {

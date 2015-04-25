@@ -93,7 +93,6 @@ public class RLEngine extends Canvas implements Runnable {
 
             if (shouldRender) {
                 frames++;
-                screen.render();
             }
 
             if (System.currentTimeMillis() - lastTimer >= 1000) {
@@ -101,7 +100,8 @@ public class RLEngine extends Canvas implements Runnable {
                 System.out.println(frames + " " + ticks);
                 frames = 0;
                 ticks = 0;
-            }
+            	screen.render();
+	    }
 
 
         }
