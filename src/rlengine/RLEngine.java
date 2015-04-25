@@ -29,7 +29,7 @@ public class RLEngine extends Canvas implements Runnable {
 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.add(screen, null);
-        screen.addKeyListener(listener);
+        frame.addKeyListener(listener);
         frame.pack();
         frame.setPreferredSize(DIMENSION);
         frame.setResizable(true);
