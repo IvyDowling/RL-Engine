@@ -8,7 +8,7 @@ import javax.swing.JFrame;
 public class RLEngine extends Canvas implements Runnable {
 
     private boolean running;
-    private static final int HEIGHT = 19, WIDTH = 29, SCALE = 32;
+    private static final int HEIGHT = 22, WIDTH = 42, SCALE = 32;
     private static final String NAME = "RL";
 
     public int tickCount = 0;
